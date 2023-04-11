@@ -121,7 +121,6 @@ persist.vendor.radio.report_codec=1
 persist.vendor.radio.snapshot_enabled=1
 persist.vendor.radio.snapshot_timer=5
 ro.telephony.default_network=33,33
-ro.vendor.use_data_netmgrd=true
 telephony.lteOnCdmaDevice=1
 persist.sys.fflag.override.settings_provider_model=false
 ril.subscription.types=RUIM
@@ -129,6 +128,17 @@ rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 
 # Time
 persist.timed.enable=true
+
+# Radio Powersaving
+persist.radio.add_power_save=1
+pm.sleep_mode=1
+ro.ril.disable.power.collapse=0
+ro.ril.fast.dormancy.rule=1
+ro.ril.fast.dormancy.timeout=3
+ro.mot.eri.losalert.delay=100
+ro.vendor.use_data_netmgrd=true
+ro.vold.umsdirtyratio=20
+power.saving.mode=1
 
 # NFC
 ro.nfc.port=I2C
